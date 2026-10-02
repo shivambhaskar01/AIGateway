@@ -1,0 +1,8 @@
+services:
+  llm-gateway:
+    build: .
+    ports:
+      - "127.0.0.1:8080:8080"
+    env_file:
+      - path: .env
+        required: false
